@@ -1,36 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 :root {
-  --color-Primary: #123456;
-  --color-Secondary: #123456;
-
-  --color-Extra-1: #123456;
-  --color-Extra-2: #123456;
-  --color-Extra-3: #123456;
-
-  --colorWhite: #fff;
-  --colorBlack: #000;
-
-  /* Bootstrap Colors - Begin */
-  /* Button */
-  --bo-b-Primary: #0d6efd;
-  --bo-b-Secondary:#6c757d;
-  --bo-b-Success: #198754;
-  --bo-b-Danger: #dc3545;
-  --bo-b-Warning: #ffc107;
-  --bo-b-Info: #0dcaf0;
-  --bo-b-Light: #f8f9fa;
-  --bo-b-Dark: #212529;
-
-  /* Alert */
-  --bo-a-Primary: #cfe2ff;
-  --bo-a-Secondary:#e2e3e5;
-  --bo-a-Success: #d1e7dd;
-  --bo-a-Danger: #f8d7da;
-  --bo-a-Warning: #fff3cd;
-  --bo-a-Info: #cff4fc;
-  --bo-a-Light: #fefefe;
-  --bo-a-Dark: #d3d3d4;
-  /* Bootstrap Colors - End */
-
+  --color-Main: #dd2f6e;
+  --color-Dark: #1d2231;
+  --text-grey: #8390a2;
 }
 
 /* ----------------------------------------------------------- */
@@ -39,31 +12,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 14px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ----------------------------------------------------------- */
 
 body {
-	/* body css */
+  /* body css */
 }
 
 /* ----------------------------------------------------------- */
 
-header {
-	/* header css */
+.sidebar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color-Main);
+}
+
+.sidebar .sidebar-brand {
+}
+/* ----------------------------------------------------------- */
+
+.main-content {
+  margin-left: 345px;
 }
 
 /* ----------------------------------------------------------- */
 
-main {
-	/* main css */
+.main-content header {
+  /* header css */
 }
 
 /* ----------------------------------------------------------- */
 
-footer {
-	/* footer css */
+.main-content main {
+  /* main css */
+}
+
+/* ----------------------------------------------------------- */
+
+.main-content footer {
+  /* footer css */
 }
 
 /* ----------------------------------------------------------- */
