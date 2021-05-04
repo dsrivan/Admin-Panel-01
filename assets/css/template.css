@@ -43,6 +43,8 @@
   height: 90px;
   padding: 1rem 0rem 1rem 2rem;
   color: var(--color-White);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar .sidebar-brand span {
@@ -58,6 +60,8 @@
   width: 100%;
   margin-bottom: 1.7rem;
   padding-left: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar .sidebar-menu a {
