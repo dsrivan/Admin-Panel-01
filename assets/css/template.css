@@ -150,7 +150,44 @@ body {
 /* ----------------------------------------------------------- */
 
 .main-content main {
-  /* main css */
+  margin-top: 85px;
+  padding: 2rem 1.5rem;
+  background-color: #f1f5f9;
+  min-height: calc(100vh - 90px);
+}
+
+.main-content main .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.main-content main .cards .card-single {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-White);
+  padding: 2rem;
+  border-radius: 2px;
+}
+
+.main-content main .cards .card-single div:first-child span {
+  color: var(--text-Grey);
+}
+
+.main-content main .cards .card-single div:last-child span {
+  color: var(--color-Main);
+  font-size: 2.5rem;
+}
+
+.main-content main .cards .card-single:last-child {
+  background-color: var(--color-Main);
+}
+
+.main-content main .cards .card-single:last-child h1,
+.main-content main .cards .card-single:last-child div:first-child span,
+.main-content main .cards .card-single:last-child div:last-child span {
+  color: var(--color-White);
 }
 
 /* ----------------------------------------------------------- */
