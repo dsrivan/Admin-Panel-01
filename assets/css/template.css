@@ -192,6 +192,29 @@ body {
 
 /* ----------------------------------------------------------- */
 
+.main-content main .recent-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 70% auto;
+}
+
+.main-content main .recent-grid .card {
+  background-color: var(--color-White);
+  border-radius: 5px;
+}
+
+.main-content main .recent-grid .card .card-header,
+.main-content main .recent-grid .card .card-body {
+  padding: 1rem;
+}
+
+.main-content main table {
+  border-collapse: collapse;
+}
+
+/* ----------------------------------------------------------- */
+
 .main-content footer {
   /* footer css */
 }
