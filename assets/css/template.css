@@ -42,7 +42,7 @@
   height: 100%;
   background-color: var(--color-Main);
   z-index: 100;
-  transition: width 0.3s;
+  transition: all 0.3s;
 }
 
 .sidebar .sidebar-brand {
@@ -131,6 +131,7 @@
 .main-content header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -138,8 +139,15 @@
   width: calc(100% - 345px);
   top: 0;
   z-index: 100;
-  transition: left 0.3s;
+  transition: all 0.3s;
   background-color: var(--color-White);
+}
+
+.main-content header .header-title,
+.main-content header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 .main-content header h2 {
@@ -161,6 +169,7 @@
   border: 1px solid #d7d6d6;
   border-radius: 30px;
   height: 50px;
+  max-width: 300px;
   overflow-x: hidden;
 }
 
@@ -353,7 +362,7 @@
 .main-content main .recent-grid .table-responsive {
   width: 100%;
   max-height: 420px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: scroll;
 }
 
@@ -458,6 +467,12 @@
   border-bottom: 1px solid #dadada;
 }
 
+.main-content main .recent-grid .contact {
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .main-content main .recent-grid .contact span {
   display: inline-block;
   font-size: 1.2rem;
@@ -476,12 +491,93 @@
 
 /* ----------------------------------------------------------- */
 
-.main-content footer {
-  /* footer css */
+/* BREAKPOINTS - Begin */
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 75px;
+  }
+  .sidebar:hover {
+    width: 345px !important;
+    z-index: 200 !important;
+  }
+
+  .main-content {
+    margin-left: 75px;
+  }
+
+  .main-content header {
+    width: calc(100% - 75px);
+    left: 75px;
+  }
+  .sidebar:hover.main-content header {
+    width: 0 !important;
+  }
 }
 
-/* ----------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 
-/* BREAKPOINTS - Begin */
+  .recent-grid {
+    grid-template-columns: 60% 40% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recent-grid {
+    grid-template-columns: 100% !important;
+  }
+
+  .search-wrapper {
+    display: none !important;
+  }
+
+  .sidebar {
+    left: -100% !important;
+  }
+
+  header h2 label {
+    display: inline-block;
+    background-color: var(--color-Main);
+    margin-right: 1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: var(--color-White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h2 span {
+    padding-right: 0rem !important;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    width: 100% !important;
+    margin-left: 0rem !important;
+  }
+
+  header {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  #nav-toggle:checked + .sidebar {
+    left: 0 !important;
+    z-index: 100 !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .cards {
+    grid-template-columns: 100% !important;
+  }
 
 /* BREAKPOINTS - End */
