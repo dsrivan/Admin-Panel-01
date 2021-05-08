@@ -45,6 +45,7 @@
   color: var(--color-White);
   overflow: hidden;
   white-space: nowrap;
+  transition: width 0.3s;
 }
 
 .sidebar .sidebar-brand span {
@@ -54,6 +55,7 @@
 
 .sidebar .sidebar-menu {
   margin-top: 1rem;
+  transition: width 0.3s;
 }
 
 .sidebar .sidebar-menu li {
@@ -76,7 +78,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--color-Main);
-  border-radius: 30px 0 0 30px;
+  border-radius: 10px 0 0 10px;
 }
 
 .sidebar .sidebar-menu a span:first-child {
@@ -92,26 +94,26 @@
 }
 
 #nav-toggle:checked + .sidebar {
-  width: 80px;
+  width: 75px;
 }
 
 #nav-toggle:checked + .sidebar .sidebar-brand,
 #nav-toggle:checked + .sidebar .sidebar-menu {
-  width: 80px;
+  /* width: 75px; */
 }
 
 #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
 #nav-toggle:checked + .sidebar li a span:last-child {
-  display: none;
+  /* display: none; */
 }
 
 #nav-toggle:checked ~ .main-content {
-  margin-left: 80px;
+  margin-left: 75px;
 }
 
 #nav-toggle:checked ~ .main-content header {
-  width: calc(100% - 80px);
-  left: 80px;
+  width: calc(100% - 75px);
+  left: 75px;
 }
 
 .main-content header {
@@ -130,6 +132,10 @@
 
 .main-content header h2 {
   color: #222;
+}
+
+.main-content header h2 label {
+  cursor: pointer;
 }
 
 .main-content header span {
@@ -245,11 +251,12 @@
 
 .main-content main .recent-grid .card .card-header button {
   background-color: var(--color-Main);
-  border-radius: 10px;
+  border-radius: 4px;
   color: var(--color-White);
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-Main);
+  cursor: pointer;
 }
 
 .main-content main .recent-grid .table-responsive {
