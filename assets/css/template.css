@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --color-Main: #dd2f6e;
+  --color-Main: var(--color-Primary);
   --text-Grey: #8390a2;
 
   --color-White: #fff;
@@ -165,8 +165,8 @@
 }
 
 .main-content header .search-wrapper:focus-within {
-  border: 1px solid #dd2f6e !important;
-  box-shadow: 0px 0px 5px #dd2f6e;
+  border: 1px solid var(--color-Main) !important;
+  box-shadow: 0px 0px 5px var(--color-Main);
 }
 
 .main-content header .search-wrapper span {
@@ -293,10 +293,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.main-content main .cards .card-single:hover {
-  transform: translateY(-10px);
-}
-
 .main-content main .cards .card-single div:first-child span {
   color: var(--text-Grey);
 }
@@ -306,13 +302,14 @@
   font-size: 2.5rem;
 }
 
-.main-content main .cards .card-single:last-child {
+.main-content main .cards .card-single:hover {
+  transform: translateY(-5px);
   background-color: var(--color-Main);
 }
 
-.main-content main .cards .card-single:last-child h1,
-.main-content main .cards .card-single:last-child div:first-child span,
-.main-content main .cards .card-single:last-child div:last-child span {
+.main-content main .cards .card-single:hover div:first-child h2,
+.main-content main .cards .card-single:hover div:first-child span,
+.main-content main .cards .card-single:hover div:last-child span {
   color: var(--color-White);
 }
 
@@ -355,7 +352,9 @@
 
 .main-content main .recent-grid .table-responsive {
   width: 100%;
-  overflow-x: auto;
+  max-height: 420px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .main-content main table {
@@ -417,11 +416,21 @@
   background-color: orangered;
 }
 
+.main-content main .recent-grid .customers .card-body {
+  max-height: 420px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .main-content main .recent-grid .customer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0.7rem;
+}
+
+.main-content main .recent-grid .customer:hover {
+  background-color: #e8e8e8;
 }
 
 .main-content main .recent-grid .info {
@@ -460,7 +469,8 @@
 }
 
 .main-content main .recent-grid .contact span:hover {
-  background-color: #ffb6d1;
+  background-color: #c4c3c3;
+  /* background-color: #ffb6d1; */
   /* border: 1px solid #e76394 !important; */
 }
 
