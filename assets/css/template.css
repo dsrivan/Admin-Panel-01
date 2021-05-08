@@ -2,12 +2,13 @@
 
 :root {
   --color-Main: #dd2f6e;
-  --color-Dark: #1d2231;
   --text-Grey: #8390a2;
 
   --color-White: #fff;
   --color-Black: #000;
 
+  --color-Pink: #dd2f6e;
+  --color-Dark: #1d2231;
   --color-Success: #157347;
   --color-Danger: #bb2d3b;
   --color-Primary: #0d6efd;
@@ -89,6 +90,22 @@
 .sidebar .sidebar-menu a span:first-child {
   font-size: 1.5rem;
   padding-right: 1rem;
+}
+
+.sidebar .sidebar-menu li:last-child {
+  padding-right: 1rem;
+  margin-top: 5rem;
+}
+
+.sidebar .sidebar-menu button {
+  width: 100%;
+  border: 1px solid var(--color-White);
+  background-color: var(--color-White);
+  color: var(--color-Main);
+  font-size: 1.5rem;
+  padding: 0 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* ----------------------------------------------------------- */
@@ -188,6 +205,76 @@
   padding: 2rem 1.5rem;
   background-color: #f1f5f9;
   min-height: calc(100vh - 90px);
+  position: relative;
+}
+
+.main-content main .available-colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 6rem;
+  right: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 0.2rem 0.05rem;
+  z-index: 999;
+  background-color: var(--color-White);
+  color: var(--color-Dark);
+  cursor: pointer;
+  overflow: hidden;
+  height: 45px;
+  width: 48px;
+  opacity: 0.5;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+
+.main-content main .available-colors div:first-child {
+  margin-bottom: 15px;
+}
+
+.main-content main .available-colors .square-color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: block;
+  margin: 2px 0;
+  transition: width 0.3s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.available-colors .square-color.color-Pink {
+  background-color: var(--color-Pink);
+}
+
+.available-colors .square-color.color-Dark {
+  background-color: var(--color-Dark);
+}
+
+.available-colors .square-color.color-Success {
+  background-color: var(--color-Success);
+}
+
+.available-colors .square-color.color-Danger {
+  background-color: var(--color-Danger);
+}
+
+.available-colors .square-color.color-Primary {
+  background-color: var(--color-Primary);
+}
+
+.available-colors .square-color.color-Warning {
+  background-color: var(--color-Warning);
+}
+
+.main-content main .available-colors:hover {
+  opacity: 1;
+  height: 240px;
+  width: 100px;
+}
+
+.main-content main .available-colors .square-color:hover {
+  width: 100% !important;
+  border-radius: 0 !important;
 }
 
 .main-content main .cards {

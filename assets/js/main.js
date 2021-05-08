@@ -1,0 +1,8 @@
+// todos os botões terão o mesmo efeito ao clicar
+const btns_theme_color = document.querySelectorAll('.square-color');
+btns_theme_color.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // o efeito será alterar a cor principal do css
+        document.documentElement.style.setProperty("--color-Main", `var(--${btn.classList[1]})`);
+    });
+});
