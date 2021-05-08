@@ -7,6 +7,11 @@
 
   --color-White: #fff;
   --color-Black: #000;
+
+  --color-Success: #157347;
+  --color-Danger: #bb2d3b;
+  --color-Primary: #0d6efd;
+  --color-Warning: #ffca2c;
 }
 
 /* ----------------------------------------------------------- */
@@ -18,6 +23,29 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+
+/* ----------------------------------------------------------- */
+
+.colorBlue {
+  padding: 0.3rem;
+  border-radius: 4px;
+  color: var(--color-White) !important;
+  background-color: var(--color-Primary) !important;
+}
+
+.colorGreen {
+  padding: 0.3rem;
+  border-radius: 4px;
+  color: var(--color-White) !important;
+  background-color: var(--color-Success) !important;
+}
+
+.colorGray {
+  padding: 0.3rem;
+  border-radius: 4px;
+  color: var(--color-White) !important;
+  background-color: var(--text-Grey) !important;
 }
 
 /* ----------------------------------------------------------- */
@@ -95,16 +123,6 @@
 
 #nav-toggle:checked + .sidebar {
   width: 75px;
-}
-
-#nav-toggle:checked + .sidebar .sidebar-brand,
-#nav-toggle:checked + .sidebar .sidebar-menu {
-  /* width: 75px; */
-}
-
-#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
-#nav-toggle:checked + .sidebar li a span:last-child {
-  /* display: none; */
 }
 
 #nav-toggle:checked ~ .main-content {
@@ -269,7 +287,6 @@
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-Main);
   cursor: pointer;
-  box-shadow: 4px 4px 5px rgb(133, 133, 133);
 }
 
 .main-content main .recent-grid .table-responsive {
@@ -362,6 +379,10 @@
 .main-content main .recent-grid .info small {
   font-weight: 600;
   color: var(--text-Grey);
+}
+
+.main-content main .recent-grid .customer {
+  border-bottom: 1px solid #dadada;
 }
 
 .main-content main .recent-grid .contact span {
