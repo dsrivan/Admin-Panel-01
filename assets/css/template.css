@@ -203,6 +203,11 @@
   background-color: var(--color-White);
   padding: 2rem;
   border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-content main .cards .card-single:hover {
+  transform: translateY(-10px);
 }
 
 .main-content main .cards .card-single div:first-child span {
@@ -257,6 +262,7 @@
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-Main);
   cursor: pointer;
+  box-shadow: 4px 4px 5px rgb(133, 133, 133);
 }
 
 .main-content main .recent-grid .table-responsive {
