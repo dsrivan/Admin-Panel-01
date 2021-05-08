@@ -146,10 +146,15 @@
 .main-content header .search-wrapper {
   display: flex;
   align-items: center;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d7d6d6;
   border-radius: 30px;
   height: 50px;
   overflow-x: hidden;
+}
+
+.main-content header .search-wrapper:focus-within {
+  border: 1px solid #dd2f6e !important;
+  box-shadow: 0px 0px 5px #dd2f6e;
 }
 
 .main-content header .search-wrapper span {
@@ -202,7 +207,7 @@
   justify-content: space-between;
   background-color: var(--color-White);
   padding: 2rem;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -245,13 +250,15 @@
 
 .main-content main .recent-grid .card .card-header {
   padding: 1rem;
-}
-
-.main-content main .recent-grid .card .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.main-content main .recent-grid .card .card-header h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .main-content main .recent-grid .card .card-header button {
@@ -274,6 +281,10 @@
   border-collapse: collapse;
 }
 
+.main-content main table thead {
+  background-color: var(--color-Main);
+}
+
 .main-content main table thead tr {
   border-top: 1px solid #f0f0f0;
   border-bottom: 2px solid #f0f0f0;
@@ -281,6 +292,17 @@
 
 .main-content main table thead tr td {
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--color-White);
+}
+
+.main-content main table tbody tr {
+  transition: background 0.3s;
+}
+
+.main-content main table tbody tr:hover {
+  background-color: #e8e8e8;
 }
 
 .main-content main table td {
