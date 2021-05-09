@@ -13,6 +13,10 @@
   --color-Danger: #bb2d3b;
   --color-Primary: #0d6efd;
   --color-Warning: #ffca2c;
+
+  --color-Purple: rebeccapurple;
+  --color-Pink: deeppink;
+  --color-Orange: orangered;
 }
 
 /* ----------------------------------------------------------- */
@@ -24,6 +28,30 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+
+.color-Pink {
+  background-color: var(--color-Pink);
+}
+
+.color-Dark {
+  background-color: var(--color-Dark);
+}
+
+.color-Success {
+  background-color: var(--color-Success);
+}
+
+.color-Danger {
+  background-color: var(--color-Danger);
+}
+
+.color-Primary {
+  background-color: var(--color-Primary);
+}
+
+.color-Warning {
+  background-color: var(--color-Warning);
 }
 
 /* ----------------------------------------------------------- */
@@ -149,7 +177,7 @@
 .main-content header h2 {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .main-content header h2 {
@@ -171,8 +199,10 @@
   border: 1px solid #d7d6d6;
   border-radius: 30px;
   height: 50px;
-  max-width: 300px;
   overflow-x: hidden;
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .main-content header .search-wrapper:focus-within {
@@ -188,6 +218,7 @@
 
 .main-content header .search-wrapper input {
   height: 100%;
+  width: 100%;
   padding: 0.5rem;
   border: none;
   outline: none;
@@ -251,30 +282,6 @@
   display: block;
   margin: 2px 0;
   transition: width 0.3s ease-in-out, border-radius 0.2s ease-in-out;
-}
-
-.available-colors .square-color.color-Pink {
-  background-color: var(--color-Pink);
-}
-
-.available-colors .square-color.color-Dark {
-  background-color: var(--color-Dark);
-}
-
-.available-colors .square-color.color-Success {
-  background-color: var(--color-Success);
-}
-
-.available-colors .square-color.color-Danger {
-  background-color: var(--color-Danger);
-}
-
-.available-colors .square-color.color-Primary {
-  background-color: var(--color-Primary);
-}
-
-.available-colors .square-color.color-Warning {
-  background-color: var(--color-Warning);
 }
 
 .main-content main .available-colors:hover {
@@ -390,6 +397,7 @@
 
 .main-content main table tbody tr {
   transition: background 0.3s;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-content main table tbody tr:hover {
@@ -415,20 +423,8 @@
   align-items: center;
 }
 
-.main-content main table td .status.purple {
-  background-color: rebeccapurple;
-}
-
-.main-content main table td .status.pink {
-  background-color: deeppink;
-}
-
-.main-content main table td .status.orange {
-  background-color: orangered;
-}
-
 .main-content main .recent-grid .customers .card-body {
-  max-height: 420px;
+  max-height: 385px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -461,7 +457,6 @@
 }
 
 .main-content main .recent-grid .info small {
-  font-weight: 600;
   color: var(--text-Grey);
 }
 
@@ -471,8 +466,8 @@
 
 .main-content main .recent-grid .contact {
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-content main .recent-grid .contact span {
@@ -482,13 +477,10 @@ justify-content: center;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 4px;
-  /* border: 1px solid var(--color-White); */
 }
 
 .main-content main .recent-grid .contact span:hover {
   background-color: #c4c3c3;
-  /* background-color: #ffb6d1; */
-  /* border: 1px solid #e76394 !important; */
 }
 
 /* ----------------------------------------------------------- */
@@ -498,10 +490,6 @@ justify-content: center;
   .sidebar {
     width: 75px;
   }
-  /* .sidebar:hover {
-    width: 345px !important;
-    z-index: 200 !important;
-  } */
 
   .main-content {
     margin-left: 75px;
@@ -528,15 +516,11 @@ justify-content: center;
   }
 
   .recent-grid {
-    grid-template-columns: 60% 40% !important;
+    grid-template-columns: 100% !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .recent-grid {
-    grid-template-columns: 100% !important;
-  }
-
   .search-wrapper {
     display: none !important;
   }
@@ -591,5 +575,6 @@ justify-content: center;
   #nav-toggle:checked + .sidebar {
     width: 100% !important;
   }
+}
 
 /* BREAKPOINTS - End */
