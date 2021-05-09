@@ -1,3 +1,12 @@
+// btn to top
+const btn_to_top = document.querySelector('.btn-to-top');
+btn_to_top.addEventListener('click', () => {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    })
+});
+
 // todos os botões terão o mesmo efeito ao clicar
 const btns_theme_color = document.querySelectorAll('.square-color');
 btns_theme_color.forEach(btn => {
