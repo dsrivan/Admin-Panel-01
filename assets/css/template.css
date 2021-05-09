@@ -297,59 +297,64 @@
   position: relative;
 }
 
-.main-content main .available-colors--btn-to-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-content main .btn-to-top,
+.main-content main .available-colors {
   position: fixed;
-  top: 30vh;
-  right: 0.5rem;
+  height: 45px;
+  width: 48px;
   border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
-  padding: 0.2rem 0.05rem;
   z-index: 300;
   background-color: var(--color-White);
   color: var(--color-Dark);
-  cursor: pointer;
   overflow: hidden;
-  height: 95px;
-  width: 48px;
-  opacity: 0.5;
-  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+  opacity: 0.3;
 }
 
-.main-content main .available-colors--btn-to-top .btn-to-top {
-  width: 100% !important;
-  text-align: center;
-}
-
-.main-content main .available-colors--btn-to-top div:first-child {
-  margin-bottom: 15px;
+.main-content main .btn-to-top {
+  top: 24.9vh;
+  right: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .main-content main .available-colors {
-  width: 100%;
-  display: flex;
+  top: 30vh;
+  right: 0.5rem;
   flex-direction: column;
-  align-items: center;
+  height: 45px;
+  width: 48px;
+  transition: height 0.2s ease-in-out, width 0.3s ease-in-out;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
-.main-content main .available-colors--btn-to-top .square-color {
+.main-content main .available-colors div:first-child {
+  margin-bottom: 15px;
+}
+
+.main-content main .available-colors .square-color {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   display: block;
   margin: 2px 0;
+  cursor: pointer;
   transition: width 0.3s ease-in-out, border-radius 0.2s ease-in-out;
 }
 
-.main-content main .available-colors--btn-to-top:hover {
+.main-content main .btn-to-top:hover {
   opacity: 1;
-  height: 280px;
-  width: 100px;
 }
 
-.main-content main .available-colors--btn-to-top .square-color:hover {
+.main-content main .available-colors:hover {
+  opacity: 1;
+  height: 230px;
+}
+
+.main-content main .available-colors .square-color:hover {
   width: 100% !important;
   border-radius: 0 !important;
 }
