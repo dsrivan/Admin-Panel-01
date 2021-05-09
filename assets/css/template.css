@@ -54,6 +54,14 @@
   background-color: var(--color-Warning);
 }
 
+.color-Purple {
+  background-color: var(--color-Purple);
+}
+
+.color-Orange {
+  background-color: var(--color-Orange);
+}
+
 /* ----------------------------------------------------------- */
 
 #nav-toggle {
