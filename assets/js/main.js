@@ -6,3 +6,10 @@ btns_theme_color.forEach(btn => {
         document.documentElement.style.setProperty("--color-Main", `var(--${btn.classList[1]})`);
     });
 });
+
+// ação de clique no botão do perfil
+const btn_user = document.querySelector('.user-wrapper');
+const div_options_user = document.querySelector('.user-wrapper-inner');
+btn_user.addEventListener('click', () => {
+    div_options_user.classList.toggle('user-wrapper-inner--show');
+});
