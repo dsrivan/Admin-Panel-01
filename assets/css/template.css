@@ -316,14 +316,14 @@
 }
 
 .main-content main .btn-to-top {
-  top: 24.9vh;
+  bottom: 10vh;
   right: 0.5rem;
   justify-content: center;
   cursor: pointer;
 }
 
 .main-content main .available-colors {
-  top: 30vh;
+  top: 15vh;
   right: 0.5rem;
   flex-direction: column;
   height: 45px;
