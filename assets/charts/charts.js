@@ -79,7 +79,10 @@ const config_pie = {
     type: 'pie', // doughnut
     data: data_pie,
     options: {
-        responsive: true
+        responsive: true,
+        legend: {
+            display: false,
+        }
     }
 };
 
