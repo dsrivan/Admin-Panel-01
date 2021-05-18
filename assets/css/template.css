@@ -233,6 +233,7 @@
   border: none;
   outline: none;
   font-size: 0.8rem;
+  background-color: #ebeef6;
 }
 
 .main-content header .user-wrapper {
