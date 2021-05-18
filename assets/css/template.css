@@ -584,7 +584,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 60% auto;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
 }
 
 .main-content main .charts-grid-one .chart-line,
