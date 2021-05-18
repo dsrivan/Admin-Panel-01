@@ -298,7 +298,7 @@
 .main-content main {
   margin-top: 72px;
   padding: 2rem 1.5rem 3rem 1.5rem;
-  background-color: #ececec;
+  background-color: #ebeef6;
   min-height: calc(100vh - 90px);
   position: relative;
 }
