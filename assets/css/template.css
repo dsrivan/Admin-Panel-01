@@ -268,13 +268,13 @@
   background-color: var(--color-White);
   z-index: 999;
   transition: all 0.3s ease-in-out;
-  transform: translateY(0.5rem);
+  transform: translateY(-0.5rem);
   opacity: 0;
   visibility: hidden;
 }
 
 .user-wrapper-inner.userWrapperInnerShow {
-  transform: translateY(-0.5rem) !important;
+  transform: translateY(0.5rem) !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
