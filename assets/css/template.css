@@ -142,7 +142,7 @@
   color: var(--color-Main);
   font-size: 1.5rem;
   padding: 0 0.6rem;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
