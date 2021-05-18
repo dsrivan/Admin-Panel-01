@@ -311,7 +311,7 @@
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 4px;
   z-index: 300;
   background-color: var(--color-White);
   color: var(--color-Dark);
