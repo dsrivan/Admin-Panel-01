@@ -612,21 +612,24 @@
 }
 
 .main-content footer {
-  background-color: var(--color-Main);
-  color: var(--color-White);
+  color: var(--color-Main);
   width: 100%;
   padding: 2rem 1.5rem;
   box-sizing: border-box;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #ebeef6;
 }
 
 .main-content footer .div-footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .main-content footer .div-footer a {
-  color: var(--color-White);
+  color: var(--color-Main);
 }
 
 /* ----------------------------------------------------------- */
