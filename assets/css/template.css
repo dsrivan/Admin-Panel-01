@@ -223,6 +223,7 @@
   display: inline-block;
   padding: 0rem 1rem;
   font-size: 1.5rem;
+  background-color: #ebeef6;
 }
 
 .main-content header .search-wrapper input {
